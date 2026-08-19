@@ -381,6 +381,14 @@ nav.links a.active::after {
   color: var(--cyan);
 }
 
+h4 {
+  margin: 10px 0px;
+}
+
+h4 .accent {
+  color: var(--cyan);
+}
+
 .hero .role {
   font-family: var(--font-mono);
   font-size: clamp(15px, 2vw, 19px);
