@@ -1228,3 +1228,80 @@ textarea:focus-visible {
   font-size: 12px;
   top: 2px;
 }
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .edu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aws-grid {
+    grid-template-columns: 1fr;
+  }
+  .aws-bar h3 {
+    font-size: 14.5px;
+  }
+}
+@media (max-width: 720px) {
+  nav.links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-soft);
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+    border-bottom: 1px solid var(--border-soft);
+  }
+  nav.links.open {
+    display: flex;
+  }
+  nav.links a {
+    padding: 12px 14px;
+  }
+  .burger {
+    display: flex;
+  }
+  section {
+    padding: 80px 0;
+  }
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+  .aws-bar {
+    padding: 14px 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .aws-bar .modnum {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+  .aws-body {
+    padding: 18px;
+  }
+}
+@media (max-width: 420px) {
+  .aws-bar h3 {
+    font-size: 13.5px;
+  }
+  .aws-body ul li {
+    font-size: 13.5px;
+  }
+}
