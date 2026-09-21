@@ -64,7 +64,8 @@ const roles = [
   "Software Developer",
   "AWS Cloud Architect",
   "DevOps Engineer",
-  "Full-Stack Engineer",
+  "Full-Stack Developer",
+  "Web Developer",
 ];
 const roleEl = document.getElementById("roleText");
 const prefersReduced = window.matchMedia(
